@@ -23,14 +23,6 @@ struct Source {
 
 class SettingViewController: UIViewController {
     let times = Source.makeTime()
-    
-//    private var headerText: UILabel = {
-//        let label = UILabel()
-//        label.text = "Settings"
-//        label.textColor = .white
-//        label.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
-//        return label
-//    }()
     var tableView: UITableView = .init()
     
 
@@ -52,10 +44,6 @@ class SettingViewController: UIViewController {
         makeConstr()
     }
     private func makeConstr() {
-//        headerText.snp.makeConstraints {
-//            $0.top.equalToSuperview().offset(60)
-//            $0.centerX.equalToSuperview()
-//        }
         tableView.snp.makeConstraints {
             $0.top.equalToSuperview()
             $0.bottom.equalToSuperview()
@@ -65,12 +53,14 @@ class SettingViewController: UIViewController {
 }
 
 extension SettingViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let changeVC = ChangeSettingViewController(setTime: times[indexPath.row])
+        navigationController?.pushViewController(changeVC, animated: true)
+    }
 }
 extension SettingViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "SettingList", for: indexPath) as? SettingTableViewCell else { return UITableViewCell() }
-        
         cell.configure(time: times[indexPath.row])
         return cell
     }
@@ -80,3 +70,4 @@ extension SettingViewController: UITableViewDataSource {
         return 2
     }
 }
+
