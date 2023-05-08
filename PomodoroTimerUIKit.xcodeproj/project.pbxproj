@@ -8,22 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		4BE37EE12A0913B6008C2ECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE37EE02A0913B6008C2ECA /* AppDelegate.swift */; };
-		4BE37EE32A0913B6008C2ECA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE37EE22A0913B6008C2ECA /* SceneDelegate.swift */; };
 		4BE37EE52A0913B6008C2ECA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE37EE42A0913B6008C2ECA /* ViewController.swift */; };
-		4BE37EE82A0913B6008C2ECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BE37EE62A0913B6008C2ECA /* Main.storyboard */; };
 		4BE37EEA2A0913B7008C2ECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BE37EE92A0913B7008C2ECA /* Assets.xcassets */; };
 		4BE37EED2A0913B7008C2ECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BE37EEB2A0913B7008C2ECA /* LaunchScreen.storyboard */; };
+		4BE37EF72A091CDC008C2ECA /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE37EF62A091CDC008C2ECA /* SettingViewController.swift */; };
+		4BE37EF92A091CEF008C2ECA /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE37EF82A091CEF008C2ECA /* HistoryViewController.swift */; };
+		4BE37EFB2A0923E5008C2ECA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE37EFA2A0923E5008C2ECA /* MainViewController.swift */; };
+		4BE37EFE2A0924B8008C2ECA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4BE37EFD2A0924B8008C2ECA /* SnapKit */; };
+		4BE37F002A092E3E008C2ECA /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE37EFF2A092E3E008C2ECA /* MyTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4BE37EDD2A0913B6008C2ECA /* PomodoroTimerUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomodoroTimerUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE37EE02A0913B6008C2ECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4BE37EE22A0913B6008C2ECA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4BE37EE42A0913B6008C2ECA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4BE37EE72A0913B6008C2ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4BE37EE92A0913B7008C2ECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BE37EEC2A0913B7008C2ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BE37EEE2A0913B7008C2ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BE37EF62A091CDC008C2ECA /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		4BE37EF82A091CEF008C2ECA /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		4BE37EFA2A0923E5008C2ECA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4BE37EFF2A092E3E008C2ECA /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BE37EFE2A0924B8008C2ECA /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,9 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				4BE37EE02A0913B6008C2ECA /* AppDelegate.swift */,
-				4BE37EE22A0913B6008C2ECA /* SceneDelegate.swift */,
+				4BE37EFF2A092E3E008C2ECA /* MyTabBarController.swift */,
 				4BE37EE42A0913B6008C2ECA /* ViewController.swift */,
-				4BE37EE62A0913B6008C2ECA /* Main.storyboard */,
+				4BE37EFA2A0923E5008C2ECA /* MainViewController.swift */,
+				4BE37EF62A091CDC008C2ECA /* SettingViewController.swift */,
+				4BE37EF82A091CEF008C2ECA /* HistoryViewController.swift */,
 				4BE37EE92A0913B7008C2ECA /* Assets.xcassets */,
 				4BE37EEB2A0913B7008C2ECA /* LaunchScreen.storyboard */,
 				4BE37EEE2A0913B7008C2ECA /* Info.plist */,
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = PomodoroTimerUIKit;
+			packageProductDependencies = (
+				4BE37EFD2A0924B8008C2ECA /* SnapKit */,
+			);
 			productName = PomodoroTimerUIKit;
 			productReference = 4BE37EDD2A0913B6008C2ECA /* PomodoroTimerUIKit.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 4BE37ED42A0913B6008C2ECA;
+			packageReferences = (
+				4BE37EFC2A0924B8008C2ECA /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 4BE37EDE2A0913B6008C2ECA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +141,6 @@
 			files = (
 				4BE37EED2A0913B7008C2ECA /* LaunchScreen.storyboard in Resources */,
 				4BE37EEA2A0913B7008C2ECA /* Assets.xcassets in Resources */,
-				4BE37EE82A0913B6008C2ECA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +151,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BE37EF72A091CDC008C2ECA /* SettingViewController.swift in Sources */,
 				4BE37EE52A0913B6008C2ECA /* ViewController.swift in Sources */,
+				4BE37EF92A091CEF008C2ECA /* HistoryViewController.swift in Sources */,
+				4BE37F002A092E3E008C2ECA /* MyTabBarController.swift in Sources */,
+				4BE37EFB2A0923E5008C2ECA /* MainViewController.swift in Sources */,
 				4BE37EE12A0913B6008C2ECA /* AppDelegate.swift in Sources */,
-				4BE37EE32A0913B6008C2ECA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4BE37EE62A0913B6008C2ECA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4BE37EE72A0913B6008C2ECA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4BE37EEB2A0913B7008C2ECA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +300,6 @@
 				INFOPLIST_FILE = PomodoroTimerUIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +327,6 @@
 				INFOPLIST_FILE = PomodoroTimerUIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4BE37EFC2A0924B8008C2ECA /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4BE37EFD2A0924B8008C2ECA /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4BE37EFC2A0924B8008C2ECA /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4BE37ED52A0913B6008C2ECA /* Project object */;
 }

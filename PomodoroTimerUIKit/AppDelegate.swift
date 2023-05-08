@@ -15,12 +15,11 @@ var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        let controller = ViewController()
-        let navigationController = UINavigationController()
-        navigationController.viewControllers.append(controller)
-        window?.rootViewController = navigationController
+        let controller = MyTabBarController()
+//        let navigationController = UINavigationController()
+//        navigationController.viewControllers.append(controller)
+        window?.rootViewController = controller
         window?.makeKeyAndVisible()
-        
         return true
     }
 
