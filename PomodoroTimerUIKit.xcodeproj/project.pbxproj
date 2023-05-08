@@ -16,6 +16,7 @@
 		4BE37EFB2A0923E5008C2ECA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE37EFA2A0923E5008C2ECA /* MainViewController.swift */; };
 		4BE37EFE2A0924B8008C2ECA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4BE37EFD2A0924B8008C2ECA /* SnapKit */; };
 		4BE37F002A092E3E008C2ECA /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE37EFF2A092E3E008C2ECA /* MyTabBarController.swift */; };
+		4BE37F022A0946D9008C2ECA /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE37F012A0946D9008C2ECA /* SettingTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		4BE37EF82A091CEF008C2ECA /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		4BE37EFA2A0923E5008C2ECA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4BE37EFF2A092E3E008C2ECA /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
+		4BE37F012A0946D9008C2ECA /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				4BE37EFF2A092E3E008C2ECA /* MyTabBarController.swift */,
 				4BE37EE42A0913B6008C2ECA /* ViewController.swift */,
 				4BE37EFA2A0923E5008C2ECA /* MainViewController.swift */,
+				4BE37F012A0946D9008C2ECA /* SettingTableViewCell.swift */,
 				4BE37EF62A091CDC008C2ECA /* SettingViewController.swift */,
 				4BE37EF82A091CEF008C2ECA /* HistoryViewController.swift */,
 				4BE37EE92A0913B7008C2ECA /* Assets.xcassets */,
@@ -153,6 +156,7 @@
 			files = (
 				4BE37EF72A091CDC008C2ECA /* SettingViewController.swift in Sources */,
 				4BE37EE52A0913B6008C2ECA /* ViewController.swift in Sources */,
+				4BE37F022A0946D9008C2ECA /* SettingTableViewCell.swift in Sources */,
 				4BE37EF92A091CEF008C2ECA /* HistoryViewController.swift in Sources */,
 				4BE37F002A092E3E008C2ECA /* MyTabBarController.swift in Sources */,
 				4BE37EFB2A0923E5008C2ECA /* MainViewController.swift in Sources */,
