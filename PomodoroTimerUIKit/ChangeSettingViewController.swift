@@ -8,10 +8,14 @@
 import UIKit
 import SnapKit
 
+protocol ChangedValueTime {
+    func time(time: String)
+}
+
 class ChangeSettingViewController: UIViewController {
-    
+    var delegate: ChangedValueTime?
     var setTime: TimesName
-    
+    var didSelectedTime: ((String) -> Void)?
     lazy var focusTimeText: UILabel = {
         let label = UILabel()
         label.textColor = .white
@@ -72,13 +76,13 @@ class ChangeSettingViewController: UIViewController {
     }
     @objc func datePickerValueChanged(_ sender: UIDatePicker){
         
-        // Create date formatter
         let dateFormatter: DateFormatter = DateFormatter()
         dateFormatter.dateFormat = "hh:mm:ss"
         dateFormatter.locale = NSLocale.current
         dateFormatter.timeZone = NSTimeZone.local
         let selectedDate: String = dateFormatter.string(from: sender.date)
-        
+        delegate?.time(time: selectedDate)
+        didSelectedTime?(selectedDate)
         print("Selected value \(selectedDate)")
     }
 }

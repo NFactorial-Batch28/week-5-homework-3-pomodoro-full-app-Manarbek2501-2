@@ -12,20 +12,12 @@ struct TimesName {
     let timeName: String
     let time: String
 }
-struct Source {
-   static func makeTime() -> [TimesName] {
-       [
-        .init(timeName: "Focus time", time: "25:00"),
-        .init(timeName: "Break time", time: "05:00"),
-       ]
-    }
-}
 
 class SettingViewController: UIViewController {
-    let times = Source.makeTime()
+    var didSelectedTime: ((String) -> Void)?
+    var times = [TimesName(timeName: "Focus time", time: "25:00"), TimesName(timeName: "Break time", time: "05:00")]
     var tableView: UITableView = .init()
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Settings"
@@ -36,7 +28,6 @@ class SettingViewController: UIViewController {
         tableView.delegate = self
         configUI()
     }
-    
     private func configUI() {
         [tableView].forEach{
             view.addSubview($0)
@@ -53,8 +44,16 @@ class SettingViewController: UIViewController {
 }
 
 extension SettingViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return times.count
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let changeVC = ChangeSettingViewController(setTime: times[indexPath.row])
+        changeVC.didSelectedTime = { [weak self] time in
+            self?.times[indexPath.row] = .init(timeName: self?.times[indexPath.row].timeName ?? "", time: time)
+            self?.tableView.reloadData()
+        }
         navigationController?.pushViewController(changeVC, animated: true)
     }
 }
@@ -64,10 +63,4 @@ extension SettingViewController: UITableViewDataSource {
         cell.configure(time: times[indexPath.row])
         return cell
     }
-    
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
-    }
 }
-
