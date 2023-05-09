@@ -34,10 +34,11 @@ class MainViewController: UIViewController {
     
     private var focusCategoryButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Focus Category", for: .normal)
+        button.setTitle(" Focus Category", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
         button.layer.cornerRadius = 18
         button.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.3)
+        button.addTarget(self, action: #selector(handlerCategory), for: .touchUpInside)
         let config = UIImage.SymbolConfiguration(
             pointSize: 20, weight: .medium, scale: .default)
         let image = UIImage(systemName: "pencil", withConfiguration: config)
@@ -80,6 +81,10 @@ class MainViewController: UIViewController {
     @objc func animateProgress() {
         let cp = self.view.viewWithTag(101) as! CircularProgressView
         cp.setProgressWithAnimation(duration: 1.0, value: 0.8)
+    }
+    @objc private func handlerCategory() {
+        let bottomVC = BottomSheetViewController()
+        self.navigationController?.pushViewController(bottomVC, animated: true)
     }
     func configUI(){
         [timerText, timerNameText].forEach {

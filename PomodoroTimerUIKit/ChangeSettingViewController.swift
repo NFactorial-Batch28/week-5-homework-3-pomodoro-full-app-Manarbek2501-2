@@ -8,12 +8,7 @@
 import UIKit
 import SnapKit
 
-protocol ChangedValueTime {
-    func time(time: String)
-}
-
 class ChangeSettingViewController: UIViewController {
-    var delegate: ChangedValueTime?
     var setTime: TimesName
     var didSelectedTime: ((String) -> Void)?
     lazy var focusTimeText: UILabel = {
@@ -81,9 +76,7 @@ class ChangeSettingViewController: UIViewController {
         dateFormatter.locale = NSLocale.current
         dateFormatter.timeZone = NSTimeZone.local
         let selectedDate: String = dateFormatter.string(from: sender.date)
-        delegate?.time(time: selectedDate)
         didSelectedTime?(selectedDate)
-        print("Selected value \(selectedDate)")
     }
 }
 extension ChangeSettingViewController {

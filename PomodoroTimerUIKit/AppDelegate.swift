@@ -16,13 +16,12 @@ var window: UIWindow?
         
         window = UIWindow(frame: UIScreen.main.bounds)
         let controller = MyTabBarController()
-//        let navigationController = UINavigationController()
-//        navigationController.viewControllers.append(controller)
+        let navigationController = UINavigationController()
+        navigationController.viewControllers.append(controller)
         window?.rootViewController = controller
         window?.makeKeyAndVisible()
         return true
     }
 
-    // MARK: UISceneSession Lifecycle
 }
 

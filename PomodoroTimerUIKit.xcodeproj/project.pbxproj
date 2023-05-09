@@ -19,6 +19,7 @@
 		4BE37F022A0946D9008C2ECA /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE37F012A0946D9008C2ECA /* SettingTableViewCell.swift */; };
 		4BE37F042A0956F1008C2ECA /* ChangeSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE37F032A0956F1008C2ECA /* ChangeSettingViewController.swift */; };
 		4BFDC6BF2A0A3D7A00882F2F /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFDC6BE2A0A3D7A00882F2F /* CircularProgressView.swift */; };
+		4BFDC6C12A0A931900882F2F /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFDC6C02A0A931900882F2F /* BottomSheetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		4BE37F012A0946D9008C2ECA /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		4BE37F032A0956F1008C2ECA /* ChangeSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSettingViewController.swift; sourceTree = "<group>"; };
 		4BFDC6BE2A0A3D7A00882F2F /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		4BFDC6C02A0A931900882F2F /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				4BE37EFF2A092E3E008C2ECA /* MyTabBarController.swift */,
 				4BE37EE42A0913B6008C2ECA /* ViewController.swift */,
 				4BE37EFA2A0923E5008C2ECA /* MainViewController.swift */,
+				4BFDC6C02A0A931900882F2F /* BottomSheetViewController.swift */,
 				4BE37F012A0946D9008C2ECA /* SettingTableViewCell.swift */,
 				4BE37EF62A091CDC008C2ECA /* SettingViewController.swift */,
 				4BE37F032A0956F1008C2ECA /* ChangeSettingViewController.swift */,
@@ -163,6 +166,7 @@
 				4BE37EF72A091CDC008C2ECA /* SettingViewController.swift in Sources */,
 				4BFDC6BF2A0A3D7A00882F2F /* CircularProgressView.swift in Sources */,
 				4BE37EE52A0913B6008C2ECA /* ViewController.swift in Sources */,
+				4BFDC6C12A0A931900882F2F /* BottomSheetViewController.swift in Sources */,
 				4BE37F022A0946D9008C2ECA /* SettingTableViewCell.swift in Sources */,
 				4BE37EF92A091CEF008C2ECA /* HistoryViewController.swift in Sources */,
 				4BE37F002A092E3E008C2ECA /* MyTabBarController.swift in Sources */,
