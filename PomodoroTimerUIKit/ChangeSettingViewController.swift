@@ -18,12 +18,17 @@ class ChangeSettingViewController: UIViewController {
         label.font = UIFont.systemFont(ofSize: 17, weight: .regular)
         return label
     }()
-    lazy var focusTime: UILabel = {
-        let label = UILabel()
-        label.textColor = .gray
-        label.font = UIFont.systemFont(ofSize: 17, weight: .regular)
-        return label
+    lazy var datePicker: UIDatePicker = {
+        let datePicker = UIDatePicker()
+        datePicker.preferredDatePickerStyle = .compact
+        datePicker.datePickerMode = .time
+        datePicker.timeZone = TimeZone(identifier: "Asia/Almaty")
+        datePicker.locale = NSLocale(localeIdentifier: "ru_RU") as Locale
+        datePicker.addTarget(self, action: #selector(datePickerValueChanged(_: )), for: .valueChanged)
+        return datePicker
     }()
+    
+    var pickerView = UIPickerView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +49,7 @@ class ChangeSettingViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     private func configUI() {
-        [focusTimeText, focusTime].forEach {
+        [focusTimeText, datePicker].forEach {
             view.addSubview($0)
         }
         makeConst()
@@ -54,7 +59,7 @@ class ChangeSettingViewController: UIViewController {
             $0.top.equalTo(view.safeAreaLayoutGuide)
             $0.left.equalToSuperview().offset(16)
         }
-        focusTime.snp.makeConstraints {
+        datePicker.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide)
             $0.right.equalToSuperview().offset(-16)
         }
@@ -65,10 +70,22 @@ class ChangeSettingViewController: UIViewController {
     @objc func goBack() {
         navigationController?.popViewController(animated: true)
     }
+    @objc func datePickerValueChanged(_ sender: UIDatePicker){
+        
+        // Create date formatter
+        let dateFormatter: DateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "hh:mm:ss"
+        dateFormatter.locale = NSLocale.current
+        dateFormatter.timeZone = NSTimeZone.local
+        let selectedDate: String = dateFormatter.string(from: sender.date)
+        
+        print("Selected value \(selectedDate)")
+    }
 }
 extension ChangeSettingViewController {
     func setup(setTimes: TimesName) {
         self.focusTimeText.text = setTimes.timeName
-        self.focusTime.text = setTimes.time
+        //        self.focusTime.text = setTimes.time
     }
 }
+

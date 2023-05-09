@@ -18,6 +18,7 @@
 		4BE37F002A092E3E008C2ECA /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE37EFF2A092E3E008C2ECA /* MyTabBarController.swift */; };
 		4BE37F022A0946D9008C2ECA /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE37F012A0946D9008C2ECA /* SettingTableViewCell.swift */; };
 		4BE37F042A0956F1008C2ECA /* ChangeSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE37F032A0956F1008C2ECA /* ChangeSettingViewController.swift */; };
+		4BFDC6BF2A0A3D7A00882F2F /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFDC6BE2A0A3D7A00882F2F /* CircularProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		4BE37EFF2A092E3E008C2ECA /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		4BE37F012A0946D9008C2ECA /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		4BE37F032A0956F1008C2ECA /* ChangeSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSettingViewController.swift; sourceTree = "<group>"; };
+		4BFDC6BE2A0A3D7A00882F2F /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				4BE37EF62A091CDC008C2ECA /* SettingViewController.swift */,
 				4BE37F032A0956F1008C2ECA /* ChangeSettingViewController.swift */,
 				4BE37EF82A091CEF008C2ECA /* HistoryViewController.swift */,
+				4BFDC6BE2A0A3D7A00882F2F /* CircularProgressView.swift */,
 				4BE37EE92A0913B7008C2ECA /* Assets.xcassets */,
 				4BE37EEB2A0913B7008C2ECA /* LaunchScreen.storyboard */,
 				4BE37EEE2A0913B7008C2ECA /* Info.plist */,
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BE37EF72A091CDC008C2ECA /* SettingViewController.swift in Sources */,
+				4BFDC6BF2A0A3D7A00882F2F /* CircularProgressView.swift in Sources */,
 				4BE37EE52A0913B6008C2ECA /* ViewController.swift in Sources */,
 				4BE37F022A0946D9008C2ECA /* SettingTableViewCell.swift in Sources */,
 				4BE37EF92A091CEF008C2ECA /* HistoryViewController.swift in Sources */,
