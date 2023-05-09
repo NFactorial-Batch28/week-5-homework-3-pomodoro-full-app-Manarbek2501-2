@@ -38,7 +38,7 @@ class MainViewController: UIViewController {
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
         button.layer.cornerRadius = 18
         button.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.3)
-        button.addTarget(self, action: #selector(handlerCategory), for: .touchUpInside)
+        button.addTarget(MainViewController.self, action: #selector(handlerCategory), for: .touchUpInside)
         let config = UIImage.SymbolConfiguration(
             pointSize: 20, weight: .medium, scale: .default)
         let image = UIImage(systemName: "pencil", withConfiguration: config)
@@ -87,13 +87,13 @@ class MainViewController: UIViewController {
         self.navigationController?.pushViewController(bottomVC, animated: true)
     }
     func configUI(){
+        view.addSubview(image)
+        [circularProgress, focusCategoryButton, playPauseButton, resetButton].forEach {
+            image.addSubview($0)
+        }
         [timerText, timerNameText].forEach {
             circularProgress.addSubview($0)
         }
-        [circularProgress,focusCategoryButton,playPauseButton,resetButton].forEach {
-            image.addSubview($0)
-        }
-        view.addSubview(image)
         makeConstr()
     }
     func makeConstr(){

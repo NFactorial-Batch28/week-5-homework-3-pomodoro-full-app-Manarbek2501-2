@@ -13,13 +13,14 @@ class MyTabBarController: UITabBarController {
         super.viewDidLoad()
         UITabBar.appearance().barTintColor = .lightGray
         UITabBar.appearance().isTranslucent = true
+        UITabBar.appearance().unselectedItemTintColor = .lightGray
         tabBar.tintColor = .white
         setupViewControllers()
     }
 
     func setupViewControllers() {
         viewControllers = [
-            wrapInNavigationController(with: MainViewController(), tabTitle: "Home", tabImage: UIImage(systemName: "house")!),
+            wrapInNavigationController(with: MainViewController(), tabTitle: "Main", tabImage: UIImage(systemName: "house")!),
             wrapInNavigationController(with: SettingViewController(), tabTitle: "Setting", tabImage: UIImage(systemName: "slider.horizontal.3")!),
             wrapInNavigationController(with: HistoryViewController(), tabTitle: "History", tabImage: UIImage(systemName: "doc")!),
         ]
@@ -33,7 +34,6 @@ class MyTabBarController: UITabBarController {
         navigationController.tabBarItem.title = tabTitle
         navigationController.tabBarItem.image = tabImage
         navigationController.navigationBar.prefersLargeTitles = true
-        rootViewController.navigationController?.title = tabTitle
         return navigationController
     }
 }

@@ -9,18 +9,18 @@ import UIKit
 import SnapKit
 
 class HistoryViewController: UIViewController {
-//    private var headerText: UILabel = {
-//        let label = UILabel()
-//        label.text = "History"
-//        label.textColor = .white
-//        label.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
-//        return label
-//    }()
+    private let titleLabel: UILabel = {
+        let titleLabel = UILabel()
+        titleLabel.text = "History"
+        titleLabel.font = UIFont.systemFont(ofSize: 17.0, weight: .semibold)
+        titleLabel.sizeToFit()
+        return titleLabel
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.titleView = titleLabel
         view.backgroundColor = UIColor(red: 0.11, green: 0.11, blue: 0.118, alpha: 1)
-        navigationItem.title = "History" 
         configUI()
     }
     private func configUI(){

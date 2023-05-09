@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        UITabBar.appearance().isTranslucent = false
         createTabBarController()
     }
             

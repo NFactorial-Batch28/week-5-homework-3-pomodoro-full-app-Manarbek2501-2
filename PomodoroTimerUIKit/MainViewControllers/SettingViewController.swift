@@ -18,9 +18,17 @@ class SettingViewController: UIViewController {
     var times = [TimesName(timeName: "Focus time", time: "25:00"), TimesName(timeName: "Break time", time: "05:00")]
     var tableView: UITableView = .init()
     
+    private let titleLabel: UILabel = {
+        let titleLabel = UILabel()
+        titleLabel.text = "Settings"
+        titleLabel.font = UIFont.systemFont(ofSize: 17.0, weight: .semibold)
+        titleLabel.sizeToFit()
+        return titleLabel
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Settings"
+        self.navigationItem.titleView = titleLabel
         view.backgroundColor = UIColor(red: 0.11, green: 0.11, blue: 0.118, alpha: 1)
         tableView.register(SettingTableViewCell.self, forCellReuseIdentifier: "SettingList")
         tableView.backgroundColor = UIColor(red: 0.11, green: 0.11, blue: 0.118, alpha: 1)

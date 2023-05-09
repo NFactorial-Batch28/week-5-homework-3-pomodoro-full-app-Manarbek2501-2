@@ -26,12 +26,19 @@ class ChangeSettingViewController: UIViewController {
         datePicker.addTarget(self, action: #selector(datePickerValueChanged(_: )), for: .valueChanged)
         return datePicker
     }()
+    private let titleLabel: UILabel = {
+        let titleLabel = UILabel()
+        titleLabel.text = "Settings"
+        titleLabel.font = UIFont.systemFont(ofSize: 17.0, weight: .semibold)
+        titleLabel.sizeToFit()
+        return titleLabel
+    }()
     
     var pickerView = UIPickerView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Settings"
+        self.navigationItem.titleView = titleLabel
         view.backgroundColor = UIColor(red: 0.11, green: 0.11, blue: 0.118, alpha: 1)
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(savedTime))
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "chevron.backward"), style: .plain, target: self, action: #selector(goBack))
@@ -55,11 +62,11 @@ class ChangeSettingViewController: UIViewController {
     }
     private func makeConst() {
         focusTimeText.snp.makeConstraints {
-            $0.top.equalTo(view.safeAreaLayoutGuide)
+            $0.top.equalToSuperview().offset(125)
             $0.left.equalToSuperview().offset(16)
         }
         datePicker.snp.makeConstraints {
-            $0.top.equalTo(view.safeAreaLayoutGuide)
+            $0.top.equalToSuperview().offset(123)
             $0.right.equalToSuperview().offset(-16)
         }
     }

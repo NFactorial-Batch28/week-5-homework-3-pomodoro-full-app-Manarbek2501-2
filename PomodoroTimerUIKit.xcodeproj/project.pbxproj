@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B1B82432A0AB12700669037 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1B82422A0AB12700669037 /* TabBarController.swift */; };
 		4BE37EE12A0913B6008C2ECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE37EE02A0913B6008C2ECA /* AppDelegate.swift */; };
 		4BE37EE52A0913B6008C2ECA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE37EE42A0913B6008C2ECA /* ViewController.swift */; };
 		4BE37EEA2A0913B7008C2ECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BE37EE92A0913B7008C2ECA /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B1B82422A0AB12700669037 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		4BE37EDD2A0913B6008C2ECA /* PomodoroTimerUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomodoroTimerUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE37EE02A0913B6008C2ECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BE37EE42A0913B6008C2ECA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +53,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B1B82442A0AB40E00669037 /* exampleTabControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BE37EE42A0913B6008C2ECA /* ViewController.swift */,
+				4BE37EFF2A092E3E008C2ECA /* MyTabBarController.swift */,
+			);
+			path = exampleTabControllers;
+			sourceTree = "<group>";
+		};
+		4B1B82452A0AB4D500669037 /* MainViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BE37EF62A091CDC008C2ECA /* SettingViewController.swift */,
+				4BE37EFA2A0923E5008C2ECA /* MainViewController.swift */,
+				4BE37EF82A091CEF008C2ECA /* HistoryViewController.swift */,
+			);
+			path = MainViewControllers;
+			sourceTree = "<group>";
+		};
 		4BE37ED42A0913B6008C2ECA = {
 			isa = PBXGroup;
 			children = (
@@ -71,14 +92,12 @@
 			isa = PBXGroup;
 			children = (
 				4BE37EE02A0913B6008C2ECA /* AppDelegate.swift */,
-				4BE37EFF2A092E3E008C2ECA /* MyTabBarController.swift */,
-				4BE37EE42A0913B6008C2ECA /* ViewController.swift */,
-				4BE37EFA2A0923E5008C2ECA /* MainViewController.swift */,
+				4B1B82422A0AB12700669037 /* TabBarController.swift */,
+				4B1B82452A0AB4D500669037 /* MainViewControllers */,
+				4B1B82442A0AB40E00669037 /* exampleTabControllers */,
 				4BFDC6C02A0A931900882F2F /* BottomSheetViewController.swift */,
 				4BE37F012A0946D9008C2ECA /* SettingTableViewCell.swift */,
-				4BE37EF62A091CDC008C2ECA /* SettingViewController.swift */,
 				4BE37F032A0956F1008C2ECA /* ChangeSettingViewController.swift */,
-				4BE37EF82A091CEF008C2ECA /* HistoryViewController.swift */,
 				4BFDC6BE2A0A3D7A00882F2F /* CircularProgressView.swift */,
 				4BE37EE92A0913B7008C2ECA /* Assets.xcassets */,
 				4BE37EEB2A0913B7008C2ECA /* LaunchScreen.storyboard */,
@@ -170,6 +189,7 @@
 				4BE37F022A0946D9008C2ECA /* SettingTableViewCell.swift in Sources */,
 				4BE37EF92A091CEF008C2ECA /* HistoryViewController.swift in Sources */,
 				4BE37F002A092E3E008C2ECA /* MyTabBarController.swift in Sources */,
+				4B1B82432A0AB12700669037 /* TabBarController.swift in Sources */,
 				4BE37F042A0956F1008C2ECA /* ChangeSettingViewController.swift in Sources */,
 				4BE37EFB2A0923E5008C2ECA /* MainViewController.swift in Sources */,
 				4BE37EE12A0913B6008C2ECA /* AppDelegate.swift in Sources */,
